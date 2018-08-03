@@ -1,0 +1,32 @@
+body /*CSS selector, targets a specific HTML element*/ {
+	background-color: #b342f4 /*This is a value*/
+}
+
+.header-title { /*This tells which class or target of 
+the HTML you want to enhance. In this case, we're 
+going to enhance the header "This is Page One"*/
+	padding-top: 50px; ?/*The padding-top is an 
+	example of an attribute*/
+	margin-right: 15px;
+	text-align: center;
+	font-size: 50px;
+	color: #000000; /*hexadecimal code for black*/
+	text-shadow: 2px 2px 25px #00ff00; /*hexadecimal 
+	code for green*/
+	font-weight: ;
+}
+
+nav { /*Opening bracket (Required)*/
+padding-top: 50px;
+text-align: center;
+}	/*Closing bracket (Required)*/
+
+.links {
+	margin-right: 20px; /*This creates proper spacing 
+	between the hyperlinks*/
+	text-align: center;
+}
+.image {
+	margin-top: 60px;
+	text-align: center;
+}

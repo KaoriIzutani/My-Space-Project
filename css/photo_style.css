@@ -1,0 +1,101 @@
+/*--------------------------------------------------------------
+GALLERY SECTION ANIMATION
+---------------------------------------------------------------*/
+
+p /*Targets the <p> just below <h3 class> tag*/{
+	font-weight: 300;
+	line-height: 30px;
+	padding-bottom: 15px;
+}
+
+.photo {
+	position: relative;
+	line-height: 0;
+	margin-bottom: 2em;
+	overflow: hidden; /*Means anything beyond the borders
+	of the image will be hidden. Good if you are coding
+	for cell phone UX*/
+	border-radius: 8px;/*Again, this is to round out 
+	your border edges*/
+	padding: 1px;
+	border: 1px solid #021a40;
+	background-color: #ff0;
+	box-shadow: 2px 2px 10px rgba(0,0,0,0.7);/*Again, the a 
+	in "rgba" determines the opacity*/
+}
+
+.photo-container {
+	text-align: center;
+	margin: 15px /*This value affects the top and 
+	bottom margins*/ auto; /*This value affects the left and 
+	right margins*/
+	width: 300px; /*300 pixels wide x 169 pixels high*/
+	height: 169px;
+}
+
+.photo-container img {
+	max-width: 100%;
+	width: 300px;
+	height: 169px;
+}
+
+.photo-overlay {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	justify-content: center; 
+	align-items: center;
+	background: rgba(0,0,0, .5);
+	
+}
+.white-head {
+	color: #C9BDAA;
+	margin-top: 5%;
+	line-height: 30px;
+	padding-bottom: 20px;
+}
+/*-------------------------------------------------------------
+PHOTO OVERLAY TRANSITIONS (Transitions are animation-like 
+effects in CSS)
+--------------------------------------------------------------*/
+
+.photo-overlay {
+	opacity: 0; /*Makes the image transparent/invisible(0) 
+	or solid/visible(1)*/
+	transition: opacity .1s;
+	border-radius: 10px;
+	cursor: pointer; /*When user puts the cursor over the 
+	image, it makes the arrow turn into a pointer. Pointer 
+	is an indicator that you can click on the image and 
+	have it do something, such as take you to another page*/
+}
+
+.photo-overlay p {
+	width: 100%;
+	height: 100%;
+	color: #fff;
+}
+
+.photo-overlay:hover {
+	opacity: 1;
+}
+
+.photo img {
+	transition: transform .5s;
+	transform-origin: 50% 50%;/*Read up on this property 
+	in your spare time*/
+}
+
+.photo:hover img {
+	transform: scale(1.1);/*When you hover over the image,
+	the image becomes one size larger than before*/
+	
+}
+
+	
+	
